@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.thpa.a9019.fitnessmore.Traincontent">
+
+
+
+    <ImageView
+
+        android:id="@+id/imgcdc"
+        android:layout_below="@+id/firstline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:adjustViewBounds="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+
+        android:background="#DCDCDC"
+        />
+    <com.cunoraz.gifview.library.GifView
+        android:id="@+id/gif1"
+        android:layout_below="@+id/firstline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="#DCDCDC"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/imgcdc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="#778899"
+
+        >
+
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/txtdes"
+            android:textColor="#FFFFFF"
+            android:background="#778899"
+            android:textSize="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:scrollbars = "vertical"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/txtdes1"
+            android:textColor="#FFFFFF"
+            android:background="#778899"
+            android:layout_below="@+id/txtdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/txtdes2"
+            android:layout_below="@+id/txtdes1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/txtdes3"
+            android:layout_below="@+id/txtdes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="10dp"/>
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstline"
+        android:layout_width="match_parent"
+        android:background="#0cda46"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageButton
+            android:id="@+id/imgback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_margin="10dp"
+
+
+            android:layout_gravity="center"
+
+            android:background ="@drawable/homeicon1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#0cda46"
+            android:id="@+id/txtvvname"
+
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_weight="2"
+
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

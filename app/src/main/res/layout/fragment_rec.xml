@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thpa.a9019.fitnessmore.RecFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/datetest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/datesav3"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/spinadd"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Date"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btnref"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.4"
+                android:background="@mipmap/ic_btnref"
+                android:baselineAlignBottom="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spinadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datetest"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/choosefromlv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choosefromlv"
+
+                android:gravity="center"
+                android:text="Add" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_spin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_below="@+id/spinadd"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+
+            android:background="#81C784"
+
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnclrrec"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dp"
+
+                android:layout_weight="0.5"
+                android:text="Clear"
+                android:theme="@style/MyButton" />
+
+            <Button
+                android:id="@+id/btnsaverec"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+
+                android:layout_weight="0.5"
+                android:text="Save"
+                android:theme="@style/MyButton" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+
+
+
